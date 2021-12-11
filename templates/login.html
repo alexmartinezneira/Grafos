@@ -1,0 +1,172 @@
+
+{% block title%}{%endblock%}
+    <title>Proyecto Final Teoria de Grafos</title>
+		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+		<link rel=stylesheet HREF='/static/css/index.css' type="text/css" media=screen>
+{% block content%}
+    <div class="container">
+        <div >
+            <form action="#" method="post">
+                <div  class="item" id="item_1">
+                    
+                        <p>Algoritmo: </p>
+                        <p><input type="checkbox" name="algoritmo" value="BFS"><label>Búsqueda en anchura (BFS)</label></p>
+                        <p><input type="checkbox" name="algoritmo" value="DFS"><label>Búsqueda en Profundidad (DFS)</label></p>
+                        <p><input type="checkbox" name="algoritmo" value="DIJ"><label>Algoritmo de Dijkstra</label></p>
+                        <p><input type="checkbox" name="algoritmo" value="KRU"><label>Algoritmo de Kruskal</label></p>
+                        
+                      
+                </div>
+                <div  class="item" id="item_2">
+                    
+                    <p>Partida </p>
+                    <p><input type="checkbox" name="inicio" value="1"><label>Los Alpes</label></p>
+                    <p><input type="checkbox" name="inicio" value="2"><label>Renaico</label></p>
+                    <p><input type="checkbox" name="inicio" value="3"><label>Angol</label></p>
+                    <p><input type="checkbox" name="inicio" value="4"><label>Mininco</label></p>
+                    <p><input type="checkbox" name="inicio" value="5"><label>Los Sauces</label></p>
+                    <p><input type="checkbox" name="inicio" value="6"><label>Collipulli</label></p>
+                    <p><input type="checkbox" name="inicio" value="7"><label>San Martin</label></p>
+                    <p><input type="checkbox" name="inicio" value="8"><label>Contulmo</label></p>
+                    <p><input type="checkbox" name="inicio" value="9"><label>Puren</label></p>
+                    <p><input type="checkbox" name="inicio" value="10"><label>Capitan Pastene</label></p>
+                    <p><input type="checkbox" name="inicio" value="11"><label>Ercilla</label></p>
+                    <p><input type="checkbox" name="inicio" value="12"><label>Pailahueque</label></p>
+                    <p><input type="checkbox" name="inicio" value="13"><label>Traiguen</label></p>
+                    <p><input type="checkbox" name="inicio" value="14"><label>Nancahue</label></p>
+                    <p><input type="checkbox" name="inicio" value="15"><label>Victoria</label></p>
+                    <p><input type="checkbox" name="inicio" value="16"><label>Galvarino</label></p>
+                    <p><input type="checkbox" name="inicio" value="17"><label>Quino</label></p>
+                    <p><input type="checkbox" name="inicio" value="18"><label>Curacautín</label></p>
+                    <p><input type="checkbox" name="inicio" value="19"><label>Yupehue</label></p>
+                    <p><input type="checkbox" name="inicio" value="20"><label>Hueñalihuen</label></p>
+                    <p><input type="checkbox" name="inicio" value="21"><label>Chol Chol</label></p>
+                    <p><input type="checkbox" name="inicio" value="22"><label>Lautaro</label></p>
+                    <p><input type="checkbox" name="inicio" value="23"><label>Pua</label></p>
+                    <p><input type="checkbox" name="inicio" value="24"><label>Perquenco</label></p>
+                    <p><input type="checkbox" name="inicio" value="25"><label>Villa Cautin</label></p>  
+                    <p><input type="checkbox" name="inicio" value="26"><label>Termas de Tolhuaca</label></p>
+                    <p><input type="checkbox" name="inicio" value="27"><label>Reserva Nacional Malleco</label></p>
+                    <p><input type="checkbox" name="inicio" value="28"><label>Reserva Nacional Nalcas</label></p>
+                    <p><input type="checkbox" name="inicio" value="29"><label>Centro de Sky Corralco</label></p>
+                    <p><input type="checkbox" name="inicio" value="30"><label>Lonquimay</label></p>
+                    <p><input type="checkbox" name="inicio" value="31"><label>Llanquen</label></p>
+                    <p><input type="checkbox" name="inicio" value="32"><label>Malalcahuello</label></p>
+                    <p><input type="checkbox" name="inicio" value="33"><label>Parque Nacional Conguillio</label></p>
+                    <p><input type="checkbox" name="inicio" value="34"><label>Cherquenco</label></p>
+                    <p><input type="checkbox" name="inicio" value="35"><label>Vilcun</label></p>
+                    <p><input type="checkbox" name="inicio" value="36"><label>Reserva Nacional Bio Bio</label></p>
+                    <p><input type="checkbox" name="inicio" value="37"><label>Comunidad Quien Quén</label></p>
+                    <p><input type="checkbox" name="inicio" value="38"><label>Laguna Galletue</label></p>
+                    <p><input type="checkbox" name="inicio" value="39"><label>Trovolhue</label></p>
+                    <p><input type="checkbox" name="inicio" value="40"><label>Puerto Saavedra</label></p>
+                    <p><input type="checkbox" name="inicio" value="41"><label>Carahue</label></p>    
+                    <p><input type="checkbox" name="inicio" value="42"><label>Nueva Imperial</label></p>
+                    <p><input type="checkbox" name="inicio" value="43"><label>Temuco</label></p>
+                    <p><input type="checkbox" name="inicio" value="44"><label>Cajon</label></p>
+                    <p><input type="checkbox" name="inicio" value="45"><label>Teodoro Schmidt</label></p>
+                    <p><input type="checkbox" name="inicio" value="46"><label>Hualpin</label></p>
+                    <p><input type="checkbox" name="inicio" value="47"><label>Labranza</label></p>
+                    <p><input type="checkbox" name="inicio" value="48"><label>Barros Arana</label></p>
+                    <p><input type="checkbox" name="inicio" value="49"><label>Pitrufquen</label></p>
+                    <p><input type="checkbox" name="inicio" value="50"><label>Cunco</label></p>
+                    <p><input type="checkbox" name="inicio" value="51"><label>Melipeuco</label></p>
+                    <p><input type="checkbox" name="inicio" value="52"><label>Los Laureles</label></p>
+                    <p><input type="checkbox" name="inicio" value="53"><label>Icalma</label></p>
+                    <p><input type="checkbox" name="inicio" value="54"><label>Cólico</label></p>
+                    <p><input type="checkbox" name="inicio" value="55"><label>Villarrica</label></p>
+                    <p><input type="checkbox" name="inicio" value="56"><label>Gorbea</label></p>
+                    <p><input type="checkbox" name="inicio" value="57"><label>Toltén</label></p>
+                    <p><input type="checkbox" name="inicio" value="58"><label>Nueva Tolén</label></p>
+                    <p><input type="checkbox" name="inicio" value="59"><label>Queule</label></p>    
+                    <p><input type="checkbox" name="inicio" value="60"><label>Las Tarreas</label></p>
+                    <p><input type="checkbox" name="inicio" value="61"><label>Loncoche</label></p>
+                    <p><input type="checkbox" name="inicio" value="62"><label>Lanco</label></p>
+                    <p><input type="checkbox" name="inicio" value="63"><label>Caburga</label></p>
+                    <p><input type="checkbox" name="inicio" value="64"><label>Pucón</label></p>
+                    <p><input type="checkbox" name="inicio" value="65"><label>Parque Nacional Villarrica</label></p>
+                    <p><input type="checkbox" name="inicio" value="66"><label>Curarrehue</label></p>
+                    <p><input type="checkbox" name="inicio" value="67"><label>Caren</label></p>
+                    <p><input type="checkbox" name="inicio" value="68"><label>Paso Tromen Ó Mamuol Malal</label></p>
+                    <p><input type="checkbox" name="inicio" value="69"><label>Reserva Nacional Villarrica</label></p>
+                    <p><input type="checkbox" name="inicio" value="70"><label>Licanrray</label></p> 
+                </div>
+                <div  class="item" id="item_3">
+                    <p>Destino </p>
+                    <p><input type="checkbox" name="final" value="1"><label>Los Alpes</label></p>
+                    <p><input type="checkbox" name="final" value="2"><label>Renaico</label></p>
+                    <p><input type="checkbox" name="final" value="3"><label>Angol</label></p>
+                    <p><input type="checkbox" name="final" value="4"><label>Mininco</label></p>
+                    <p><input type="checkbox" name="final" value="5"><label>Los Sauces</label></p>
+                    <p><input type="checkbox" name="final" value="6"><label>Collipulli</label></p>
+                    <p><input type="checkbox" name="final" value="7"><label>San Martin</label></p>
+                    <p><input type="checkbox" name="final" value="8"><label>Contulmo</label></p>
+                    <p><input type="checkbox" name="final" value="9"><label>Puren</label></p>
+                    <p><input type="checkbox" name="final" value="10"><label>Capitan Pastene</label></p>
+                    <p><input type="checkbox" name="final" value="11"><label>Ercilla</label></p>
+                    <p><input type="checkbox" name="final" value="12"><label>Pailahueque</label></p>
+                    <p><input type="checkbox" name="final" value="13"><label>Traiguen</label></p>
+                    <p><input type="checkbox" name="final" value="14"><label>Nancahue</label></p>
+                    <p><input type="checkbox" name="final" value="15"><label>Victoria</label></p>
+                    <p><input type="checkbox" name="final" value="16"><label>Galvarino</label></p>
+                    <p><input type="checkbox" name="final" value="17"><label>Quino</label></p>
+                    <p><input type="checkbox" name="final" value="18"><label>Curacautín</label></p>
+                    <p><input type="checkbox" name="final" value="19"><label>Yupehue</label></p>
+                    <p><input type="checkbox" name="final" value="20"><label>Hueñalihuen</label></p>
+                    <p><input type="checkbox" name="final" value="21"><label>Chol Chol</label></p>
+                    <p><input type="checkbox" name="final" value="22"><label>Lautaro</label></p>
+                    <p><input type="checkbox" name="final" value="23"><label>Pua</label></p>
+                    <p><input type="checkbox" name="final" value="24"><label>Perquenco</label></p>
+                    <p><input type="checkbox" name="final" value="25"><label>Villa Cautin</label></p>  
+                    <p><input type="checkbox" name="final" value="26"><label>Termas de Tolhuaca</label></p>
+                    <p><input type="checkbox" name="final" value="27"><label>Reserva Nacional Malleco</label></p>
+                    <p><input type="checkbox" name="final" value="28"><label>Reserva Nacional Nalcas</label></p>
+                    <p><input type="checkbox" name="final" value="29"><label>Centro de Sky Corralco</label></p>
+                    <p><input type="checkbox" name="final" value="30"><label>Lonquimay</label></p>
+                    <p><input type="checkbox" name="final" value="31"><label>Llanquen</label></p>
+                    <p><input type="checkbox" name="final" value="32"><label>Malalcahuello</label></p>
+                    <p><input type="checkbox" name="final" value="33"><label>Parque Nacional Conguillio</label></p>
+                    <p><input type="checkbox" name="final" value="34"><label>Cherquenco</label></p>
+                    <p><input type="checkbox" name="final" value="35"><label>Vilcun</label></p>
+                    <p><input type="checkbox" name="final" value="36"><label>Reserva Nacional Bio Bio</label></p>
+                    <p><input type="checkbox" name="final" value="37"><label>Comunidad Quien Quén</label></p>
+                    <p><input type="checkbox" name="final" value="38"><label>Laguna Galletue</label></p>
+                    <p><input type="checkbox" name="final" value="39"><label>Trovolhue</label></p>
+                    <p><input type="checkbox" name="final" value="40"><label>Puerto Saavedra</label></p>
+                    <p><input type="checkbox" name="final" value="41"><label>Carahue</label></p>    
+                    <p><input type="checkbox" name="final" value="42"><label>Nueva Imperial</label></p>
+                    <p><input type="checkbox" name="final" value="43"><label>Temuco</label></p>
+                    <p><input type="checkbox" name="final" value="44"><label>Cajon</label></p>
+                    <p><input type="checkbox" name="final" value="45"><label>Teodoro Schmidt</label></p>
+                    <p><input type="checkbox" name="final" value="46"><label>Hualpin</label></p>
+                    <p><input type="checkbox" name="final" value="47"><label>Labranza</label></p>
+                    <p><input type="checkbox" name="final" value="48"><label>Barros Arana</label></p>
+                    <p><input type="checkbox" name="final" value="49"><label>Pitrufquen</label></p>
+                    <p><input type="checkbox" name="final" value="50"><label>Cunco</label></p>
+                    <p><input type="checkbox" name="final" value="51"><label>Melipeuco</label></p>
+                    <p><input type="checkbox" name="final" value="52"><label>Los Laureles</label></p>
+                    <p><input type="checkbox" name="final" value="53"><label>Icalma</label></p>
+                    <p><input type="checkbox" name="final" value="54"><label>Cólico</label></p>
+                    <p><input type="checkbox" name="final" value="55"><label>Villarrica</label></p>
+                    <p><input type="checkbox" name="final" value="56"><label>Gorbea</label></p>
+                    <p><input type="checkbox" name="final" value="57"><label>Toltén</label></p>
+                    <p><input type="checkbox" name="final" value="58"><label>Nueva Tolén</label></p>
+                    <p><input type="checkbox" name="final" value="59"><label>Queule</label></p>    
+                    <p><input type="checkbox" name="final" value="60"><label>Las Tarreas</label></p>
+                    <p><input type="checkbox" name="final" value="61"><label>Loncoche</label></p>
+                    <p><input type="checkbox" name="final" value="62"><label>Lanco</label></p>
+                    <p><input type="checkbox" name="final" value="63"><label>Caburga</label></p>
+                    <p><input type="checkbox" name="final" value="64"><label>Pucón</label></p>
+                    <p><input type="checkbox" name="final" value="65"><label>Parque Nacional Villarrica</label></p>
+                    <p><input type="checkbox" name="final" value="66"><label>Curarrehue</label></p>
+                    <p><input type="checkbox" name="final" value="67"><label>Caren</label></p>
+                    <p><input type="checkbox" name="final" value="68"><label>Paso Tromen Ó Mamuol Malal</label></p>
+                    <p><input type="checkbox" name="final" value="69"><label>Reserva Nacional Villarrica</label></p>
+                    <p><input type="checkbox" name="final" value="70"><label>Licanrray</label></p> 
+                </div>
+                <p><input  type="submit" value="submit"/ placeholder="Subir"></p>
+            </form>
+        </div>
+    </div>
+{%endblock%}

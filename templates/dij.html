@@ -1,0 +1,18 @@
+
+{% block title%}{%endblock%}
+<title>Proyecto Final Teoria de Grafos</title>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <link rel=stylesheet HREF='/static/css/index.css' type="text/css" media=screen>
+{% block content%}
+<div class="container">
+    <h2>La ruta mas Corta segun el Algoritmo  de Dijkstra es: </h2><br>
+    <p> {{rut}}</p><br>
+    <h2>La distancia  segun el Algoritmo  de Dijkstra es: </h2><br>
+    <p> {{dis}}</p>
+    <h2>El combustible a gastar en el Viaje es de:  </h2><br>
+    <p> ${{a}}</p>
+    <h2>Litros Consumidos en el Viaje  </h2><br>
+    <p> {{l}}Lt</p>
+</div>
+{%endblock%}

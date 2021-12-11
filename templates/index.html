@@ -1,129 +1,18 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Proyecto Final Teoria de Grafos</title>
-		<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-		<link rel=stylesheet HREF='/static/css/index.css' type="text/css" media=screen>
-	</head>
-	<body>
-		<div>
-			<h1 align="center">Proyecto Final Teoria de Grafos</h1>	
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabajo Final Teoria de Grafos</title>
+	<link rel="stylesheet" href="../static/css/estilos.css">
+</head>
+<body>
+	<div class="banner">
+		<div class="capa"></div>
+		<div class="info">
+			<h1>Trabajo Final Teoria de Grafos</h1>
+			<p>Ignacio Ringler - Matias Vargas - Karin Ríos - Alex Martinez Neira - Nicolás Escobar</p>
+			<a href="/algoritmos">Algoritmos</a>
 		</div>
-		<div class="container">
-			<div class="item" id="item_1">
-					<h3>Algoritmo </h3>
-					<form>
-					    <div class="mb-3">
-					      <select id="disabledSelect" class="form-select">
-					        <option>Búsqueda en anchura (BFS)</option>
-					        <option>Búsqueda en Profundidad (DFS)</option>
-					        <option>Algoritmo de Dijkstra</option>
-					        <option>Algoritmo de Kruskal</option>
-					      </select>
-					    </div>
-				   
-					
-			</div>
-			<div class="item" id="item_2">
-					<h3>Ruta Inicio</h3>
-					
-					    <div class="mb-3">
-					      <select id="disabledSelect" class="form-select">
-					        <option>Los Alpes</option>
-					        <option>Renaico </option>
-					        <option>Angol</option>
-					        <option>Mininco</option>
-					        <option>Contulmo</option>
-					        <option>Puren</option>
-					        <option>Los Sauces</option>
-					        <option>Collipulli</option>
-					        <option>San Martin</option>
-					        <option>Capitan Pastene</option>
-					        <option>Traiguen</option>
-					        <option>Ercilla</option>
-					        <option>Pailahueque</option>
-					        <option>Nancahue</option>
-					        <option>Victoria</option>
-					        <option>Quino</option>
-					        <option>Pua</option>
-					        <option>Hueñalihuen</option>
-					        <option>Galvarino</option>
-					        <option>Perquenco</option>
-					        <option>Villa Cautin</option>
-					        <option>Curacautín</option>
-					        <option>Termas de Tolhuaca</option>	
-					        <option>Reserva Nacional Malleco</option>
-					        <option>Reserva Nacional Nalcas </option>
-					        <option>Llanquen</option>
-					        <option>Malalcahuello</option>
-					        <option>Lonquimay</option>
-					        <option>Centro de Sky Corralco</option>
-					        <option>Reserva Nacional Bio Bio</option>
-					        <option>Yupehue</option>
-					        <option>Chol Chol</option>
-					        <option>Lautaro</option>
-					        <option>Trovolhue</option>
-					        <option>Puerto Saavedra</option>
-					        <option>Carahue</option>
-					        <option>Nueva Imperial</option>
-					        <option>Labranza</option>
-					        <option>Temuco</option>
-					        <option>Cajon</option>
-					        <option>Vilcun</option>
-					        <option>Cherquenco</option>
-					        <option>Parque Nacional Conguillio</option>
-					        <option>Comunidad Quien Quén</option>
-					        <option>Laguna Galletue</option>
-					        <option>Icalma</option>
-					        <option>Melipeuco</option>
-					        <option>Cunco</option>
-					        <option>Los Laureles</option>
-					        <option>Cólico</option>
-					        <option>Pitrufquen</option>
-					        <option>Barros Arana</option>
-					        <option>Teodoro Schmidt</option>
-					        <option>Hualpin</option>
-					        <option>Nueva Tolén</option>
-					        <option>Toltén</option>
-					        <option>Queule</option>
-					        <option>Gorbea</option>
-					        <option>Las Tarreas</option>
-					        <option>Loncoche</option>
-					        <option>Lanco</option>
-					        <option>Villarrica</option>
-					        <option>Licanrray</option>
-					        <option>Pucón</option>
-					        <option>Caburga</option>
-					        <option>Parque Nacional Villarrica</option>
-					        <option>Curarrrehue</option>
-					        <option>Caren</option>
-					        <option>Paso Tromen Ó Mamuol Malal</option>
-					        <option>Reserva Nacional Villarrica</option>
-					      </select>
-					    </div>
-				   
-					
-				
-			</div>
-			
-					<div class="item" id="item_4">
-				   		<button type="submit">Ingresar Datos</button>
-				   	</div>
-				</form>
-				
-				
-			</div>
-			
-			
-					
-				
-			</div>
-		</div> 
-		<h1 id='Tl_Rut'>Rut del Drone</h1>
-        <div id='map' style="height: 1000px; width: 1000px;"></div><br>
-        
-       
-        <script src="/static/js/main.js"></script>
-	</body>
+	</div>
+</body>
 </html>
